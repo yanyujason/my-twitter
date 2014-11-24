@@ -65,81 +65,415 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* line 4, ../sass/style.scss */
 html {
-  background-color: #006666;
-  font-family: 'PT Sans', sans-serif;
+  min-width: 80%;
+  min-height: auto;
 }
 
-/* line 9, ../sass/style.scss */
-a {
-  text-decoration: none;
-}
-
-/* line 13, ../sass/style.scss */
+/* line 8, ../sass/style.scss */
 body {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 62.5%;
+  background-color: #006666;
   margin: 0 auto;
-  width: 1000px;
 }
 
-/* line 18, ../sass/style.scss */
-.suburb {
+/* line 16, ../sass/style.scss */
+.container {
+  width: 90%;
+  height: 600px;
   background-image: url("../img/sunset-resized.jpg");
-  background-size: 1000px 600px;
-  height: 500px;
+  opacity: 0.9;
+  background-size: 100% 600px;
+  margin: 0 auto;
 }
 
 /* line 24, ../sass/style.scss */
-.login {
+.a {
+  position: relative;
+  width: 400px;
+  margin: 0 auto;
+}
+
+/* line 30, ../sass/style.scss */
+.search-button {
+  position: absolute;
+  top: 23px;
+  right: -71px;
+}
+
+/* line 37, ../sass/style.scss */
+.top_bar ul {
+  font-size: 1.5em;
+}
+/* line 39, ../sass/style.scss */
+.top_bar ul li {
+  margin-top: 30px;
+}
+/* line 43, ../sass/style.scss */
+.top_bar ul li:nth-last-child(3) {
+  margin-left: 160px;
+  float: left;
+}
+/* line 47, ../sass/style.scss */
+.top_bar ul li:nth-last-child(1) {
+  border: 1px solid white;
   float: right;
-  margin-right: 100px;
-}
-
-/* line 29, ../sass/style.scss */
-.header_input {
+  width: 75px;
+  height: 20px;
   text-align: center;
-  margin-top: 150px;
+  padding: 10px 0 0 0;
+  margin-top: 20px;
+  margin-right: -200px;
 }
-
-/* line 34, ../sass/style.scss */
-.sign_up {
-  margin-left: 20px;
-  border: 1px solid #CCC;
-  width: 100px;
-  height: 30px;
-}
-
-/* line 41, ../sass/style.scss */
-.content {
-  border: 1px solid #CCC;
-  height: 1500px;
-  width: 1000px;
-  background-color: white;
-}
-
-/* line 48, ../sass/style.scss */
-.bottom_input {
-  background-image: url("../img/sunset-resized.jpg");
-  background-size: 1000px 200px;
-  height: 200px;
-}
-
-/* line 54, ../sass/style.scss */
-.bottom {
-  border: 1px solid #CCC;
-  width: 1000px;
-  height: 50px;
-  background-color: white;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
+/* line 57, ../sass/style.scss */
+.top_bar ul li:nth-last-child(2) {
+  margin-right: 200px;
+  float: right;
 }
 
 /* line 63, ../sass/style.scss */
-.bottom font {
-  margin-left: 20px;
-  float: left;
+.agent_top {
+  text-align: center;
+  padding-top: 200px;
+  line-height: 2;
+}
+/* line 67, ../sass/style.scss */
+.agent_top h1 {
+  font-size: 2.5em;
+  color: white;
+}
+/* line 71, ../sass/style.scss */
+.agent_top p {
+  font-size: 1.8em;
+  color: white;
+}
+/* line 75, ../sass/style.scss */
+.agent_top input {
+  margin-top: 20px;
+  width: 400px;
+  height: 40px;
+  font-size: 1.3em;
+  opacity: 0.5;
+  font-color: white;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  border: none;
+}
+/* line 87, ../sass/style.scss */
+.agent_top button {
+  width: 100px;
+  height: 42px;
+  border: none;
+  color: #fff;
+  background: #67ddab;
+  cursor: pointer;
+  margin-left: -3px;
+  margin-top: -3px;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  border: none;
 }
 
-/* line 68, ../sass/style.scss */
-.bottom_left {
-  margin-top: 15px;
+/* line 102, ../sass/style.scss */
+.content {
+  border: 1px solid #CCC;
+  width: 90%;
+  height: 1800px;
+  background-color: white;
+  margin: 0 auto;
+}
+/* line 108, ../sass/style.scss */
+.content .how {
+  width: 85%;
+  height: 500px;
+  margin: 0 auto;
+  margin-top: 150px;
+}
+/* line 113, ../sass/style.scss */
+.content .how .how_header {
+  border-bottom: 1px solid #aaa;
+  padding-bottom: 105px;
+  text-align: center;
+  margin: 0 auto;
+  width: 700px;
+}
+/* line 119, ../sass/style.scss */
+.content .how .how_header .how_underline {
+  border-top: 3px solid #CCC;
+  width: 50px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+/* line 125, ../sass/style.scss */
+.content .how .how_header h2 {
+  font-weight: bolder;
+  font-size: 20px;
+}
+/* line 130, ../sass/style.scss */
+.content .how .how_content {
+  position: relative;
+  top: -20px;
+  overflow: hidden;
+  padding-bottom: 120px;
+  border-bottom: 1px solid #ccc;
+}
+/* line 136, ../sass/style.scss */
+.content .how .how_content .item {
+  float: left;
+  width: 28%;
+  margin: 0 2.6%;
+}
+/* line 140, ../sass/style.scss */
+.content .how .how_content .item .icon {
+  border: 1px solid #ccc;
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+  background: #f4f3f1;
+  margin: 0 auto;
+}
+/* line 147, ../sass/style.scss */
+.content .how .how_content .item .icon i {
+  display: block;
+  margin: 7px 10px;
+}
+/* line 153, ../sass/style.scss */
+.content .how .how_content .item img {
+  display: block;
+  margin: 20px auto 40px;
+  height: 35px;
+  width: 35px;
+}
+/* line 159, ../sass/style.scss */
+.content .how .how_content .item h2 {
+  font-size: 18px;
+  margin-bottom: 24px;
+  text-align: center;
+  font-weight: bolder;
+}
+/* line 165, ../sass/style.scss */
+.content .how .how_content .item p {
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.5;
+}
+/* line 173, ../sass/style.scss */
+.content .why {
+  width: 85%;
+  height: 500px;
+  margin: 0 auto;
+  margin-top: 100px;
+  border-bottom: 1px solid #CCC;
+  padding-bottom: 100px;
+}
+/* line 180, ../sass/style.scss */
+.content .why .title {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 70px;
+}
+/* line 186, ../sass/style.scss */
+.content .why .item {
+  width: 49.8%;
+  height: 150px;
+  float: left;
+}
+/* line 190, ../sass/style.scss */
+.content .why .item img {
+  margin-top: 20px;
+  position: absolute;
+  margin-left: 20px;
+}
+/* line 195, ../sass/style.scss */
+.content .why .item .text {
+  margin-left: 70px;
+  font-size: 16px;
+}
+/* line 198, ../sass/style.scss */
+.content .why .item .text h3 {
+  margin-top: 18px;
+  padding-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+/* line 204, ../sass/style.scss */
+.content .why .item .text p {
+  padding-right: 100px;
+}
+/* line 210, ../sass/style.scss */
+.content .recent {
+  width: 85%;
+  height: 300px;
+  margin: 0 auto;
+  background-color: white;
+}
+/* line 215, ../sass/style.scss */
+.content .recent .testmonials {
+  width: 25%;
+  border: 1px solid #CCC;
+  height: 35px;
+  margin: 0 auto;
+  margin-top: 90px;
+}
+/* line 221, ../sass/style.scss */
+.content .recent .testmonials .div1 {
+  background-color: #003333;
+  width: 50%;
+  text-align: center;
+  height: 35px;
+  font-size: 15px;
+  float: left;
+  color: white;
+}
+/* line 229, ../sass/style.scss */
+.content .recent .testmonials .div1 p {
+  padding-top: 10px;
+}
+/* line 233, ../sass/style.scss */
+.content .recent .testmonials .div2 {
+  width: 50%;
+  text-align: center;
+  height: 35px;
+  float: left;
+  font-size: 15px;
+}
+/* line 239, ../sass/style.scss */
+.content .recent .testmonials .div2 p {
+  padding-top: 10px;
+}
+/* line 244, ../sass/style.scss */
+.content .recent .text {
+  width: 40%;
+  height: 100px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+/* line 252, ../sass/style.scss */
+.content .recent .text .short-line {
+  width: 5%;
+  margin: 0 auto;
+  border-bottom: 1px solid #CCC;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/* line 259, ../sass/style.scss */
+.content .recent .text .image {
+  width: 400px;
+  height: 60px;
+  margin: 0 auto;
+  margin-top: 20px;
   margin-left: 60px;
+}
+/* line 265, ../sass/style.scss */
+.content .recent .text .image div {
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  background-image: url("../img/sunset-resized.jpg");
+  float: left;
+  margin-left: 30px;
+}
+
+/* line 279, ../sass/style.scss */
+.bottom-agent {
+  width: 90%;
+  height: 200px;
+  background-image: url("../img/sunset-resized.jpg");
+  margin: 0 auto;
+}
+/* line 284, ../sass/style.scss */
+.bottom-agent span {
+  font-size: 18px;
+  color: white;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+/* line 290, ../sass/style.scss */
+.bottom-agent div {
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 60px;
+}
+/* line 294, ../sass/style.scss */
+.bottom-agent div input {
+  margin-top: 20px;
+  width: 400px;
+  height: 40px;
+  font-size: 1.3em;
+  opacity: 0.5;
+  font-color: white;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  border: none;
+}
+/* line 306, ../sass/style.scss */
+.bottom-agent div button {
+  width: 100px;
+  height: 43px;
+  border: none;
+  color: #fff;
+  background: #67ddab;
+  cursor: pointer;
+  margin-left: -2px;
+  margin-top: -2px;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+/* line 321, ../sass/style.scss */
+.footer {
+  height: 50px;
+  background-color: white;
+  width: 90%;
+  margin: 0 auto;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+/* line 328, ../sass/style.scss */
+.footer ul {
+  text-decoration: none;
+  padding-top: 20px;
+  padding-left: 100px;
+}
+/* line 332, ../sass/style.scss */
+.footer ul li {
+  float: left;
+  font-size: 15px;
+  margin-left: 30px;
+}
+/* line 337, ../sass/style.scss */
+.footer ul li:nth-last-child(2) {
+  margin-left: 500px;
+}
+
+/* line 343, ../sass/style.scss */
+.agent_number {
+  width: 90%;
+  border: 1px solid red;
+  overflow: hidden;
+  margin: 0 auto;
+  border-radius: 6px;
+  top: -75px;
+  position: relative;
+  background: #f4f3f1;
+  /*.item{
+    width: 25%;
+    border-right: 1px solid #CCC;
+    float: left;
+    .number {
+      padding: 50px 0 20px;
+      font-weight: bolder;
+      color: #555;
+    }
+    p{
+      color: #999;
+      text-align: center;
+      padding-bottom: 50px;
+    }
+  }
+*/
 }

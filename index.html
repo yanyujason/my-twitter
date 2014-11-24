@@ -7,74 +7,173 @@
 	    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 	<!-- <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'> -->
-    <link href="sass/style.scss" type="text/css" rel="stylesheet" >
+    <link href="stylesheets/style.css" type="text/css" rel="stylesheet" >
 </head>
 <body>
-  <div class="suburb">
-  	<div>
-      <div class="logo">
-        <img src="" />
+  <div class="container">
+    <div>
+      <div class="top_bar">
+        <ul>
+          <li>LOGO</li>
+          <li>Agent &nbsp;&nbsp;&nbsp;Login</li>
+          <li>Sign Up</li>
+        </ul>
       </div>
-      <div class="login">
-      	<a href="">Agents Login</a>       
-      	<span class="sign_up" style="width:100px;"><a href="#">Sign up</a></span>
-      </div>
-      <div class="header_input">
-        <h2>Relax, Finding An Agent Just Got Easier</h2>
+      <div class="agent_top">
+        <h1>Relax, Finding An Agent Just Got Easier</h1>
         <p>Receive proposals from best agents for free</p>
-        <input type="text" placeholder="  Enter a Suburb" style="width:400px;height:30px;opacity:0.5;font-size:18px;"></input>
-        <!-- <a href="#">Search</a> -->
-        <button style="width:70px;height:36px;margin-left:-5px;background:#00FFCC;">SEARCH</button>
+        <div class='a'>
+        <input type="text" placeholder="        Enter a Suburb"></input>
+        <button class='search-button'>SEARCH</button>
+      </div>
       </div>
     </div>
   </div>
+  <!-- <div class="agent_number">
+    <div>
+      <div class="item">
+        <h3 class="number">20,000</h3>
+        <p class="unit">Agents</p>
+      </div>
+      <div class="item">
+        <h3 class="number">20,000</h3>
+        <p class="unit">Agents</p>
+      </div>
+      <div class="item">
+        <h3 class="number">20,000</h3>
+        <p class="unit">Agents</p>
+      </div>
+      <div class="item">
+        <h3 class="number">20,000</h3>
+        <p class="unit">Agents</p>
+      </div>
+    </div>
+  </div> -->
   <div class="content">
-
-   <div style="border:1px solid #CCC;width:900px;height:500px;">
-     <h3>HOW IT WORKS</h3>
-     <div style="">
-       <div style="border:1px solid #CCC;height:200px;width:28%;float:left;margin-left:30px;"></div>
-       <div style="border:1px solid #CCC;height:200px;width:28%;float:left;margin-left:30px;"></div>
-       <div style="border:1px solid #CCC;height:200px;width:28%;float:left;margin-left:30px;"></div>
-     </div>
-   </div>
-   <hr/>
-   <div style="border:1px solid #CCC;width:900px;height:800px;">
-     <h3>HOW IT WORKS</h3>
-     <div style="">
-       <div style="border:1px solid #CCC;height:200px;width:28%;float:left;margin-left:30px;"></div>
-       <div style="border:1px solid #CCC;height:200px;width:28%;float:left;margin-left:30px;"></div>
-       <div style="border:1px solid #CCC;height:200px;width:28%;float:left;margin-left:30px;"></div>
-       <div style="border:1px solid #CCC;height:200px;width:28%;float:left;margin-left:30px;"></div>
-       <div style="border:1px solid #CCC;height:200px;width:28%;float:left;margin-left:30px;"></div>
-       <div style="border:1px solid #CCC;height:200px;width:28%;float:left;margin-left:30px;"></div>
-     </div>
-   </div>
-   <hr/>
-   <div style="text-align: center;margin-top: 40px;">
-     <h2>Relax, Finding An Agent Just Got Easier</h2>
-     <p>Receive proposals from best agents for free</p>
-   </div>
-  </div>
-  <div class="bottom_input">
-    <div style="text-align:center;padding-top:90px;">
-      <font style="color:white;">Find An Agent&nbsp;&nbsp;&nbsp;&nbsp;</font><input type="text" placeholder="  Enter a Suburb" style="width:400px;height:30px;opacity:0.5;font-size:18px;"></input>
-      <button style="width:70px;height:36px;margin-left:-5px;background:#00FFCC;">SEARCH</button>
-  </div>
-  </div>
-  <div class="bottom">
-    <div class="bottom_left">
-      <font><a href="">Blog</a></font>
-      <font><a href="">Contact Us</a></font>
-      <font><a href="">About Us</a></font>
-      <font><a href="">FAQs</a></font>
-      <font><a href="">Privacy</a></font>
-      <font><a href="">Disclaimer</a></font>
+    <div class="how">
+      <div class="how_header">
+        <h2>HOW IT WORKS</h2>
+        <div class="how_underline"></div>
+      </div>
+      <div class="how_content">
+        <div class="item">
+          <p class="icon">
+            <i>1</i>
+          </p>
+          <img src="./img/icon1.png" >
+          <h2>Compear</h2>
+          <p>Magni dolores eos qui ration vo-</p>
+          <p>luptatem sequi nesciunt neque</p>
+          <p> porro quisquam est</p>
+        </div> 
+        <div class="item">
+          <p class="icon">
+            <i>2</i>
+          </p>
+          <img src="./img/icon2.png" >
+          <h2>Receive Proposals</h2>
+          <p>Duis aute irure dolor in reprehen-</p>
+          <p>derit coluptate velit esse cillum</p>
+          <p> dolore fugiat</p>
+        </div> 
+        <div class="item">
+          <p class="icon">
+            <i>3</i>
+          </p>
+          <img src="./img/icon3.png">
+          <h2>sell with the best</h2>
+          <p>Incidunt ut labore et dolore</p>
+          <p>managem aliquam quaerat vo-</p>
+          <p> luptatem</p>
+        </div>   
+      </div>
     </div>
-    <div class="bottom_right">
-      <img src="./img/twitter.png" style="margin-left:300px;"/>
-      <img src="./img/facebook.png" style="margin-left:20px;"/>
+    <div class="why">
+      <h2 class="title">WHY CHOOSE US?</h2>
+      <div class="item">
+        <img src="img/icon4.png">
+        <div class="text">
+          <h3>Quick</h3>
+          <p>ike glitter's raining on me You like a shot of pure gold I think I'm 'bout to explode memo enim ipfjkd iten idngion img dimn outn ofjen innfj imt ioont</p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="img/icon5.png">
+        <div class="text">
+          <h3>Free</h3>
+          <p>ike glitter's raining on me You like a shot of pure gold I think I'm 'bout to explode memo enim ipfjkd iten idngion img dimn outn ofjen innfj imt ioont</p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="img/icon6.png">
+        <div class="text">
+          <h3>Easy</h3>
+          <p>igjmtm offmt ofokmtg oofdm iiiod ogoog ppgg iof foof ooog ddpph oog ike glitter's raining on me You like a shot of pure gold I think I'm 'bout to explode</p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="img/icon7.png">
+        <div class="text">
+          <h3>Independent</h3>
+          <p>ike glitter's raining on me You like a shot of pure gold I think I'm 'bout to explode memo enim ipfjkd iten idngion img dimn outn ofjen innfj imt ioont</p>        </div>
+      </div>
+      <div class="item">
+        <img src="img/icon8.png">
+        <div class="text">
+          <h3>Comprehensive</h3>
+          <p>i gkmmg imh pv gfohnm oemg dioome You like a shot of pure gold I think I'm 'bout to explode memo enim ipfjkd iten idngion img dimn outn ofjen innfj imt ioont</p>        </div>
+      </div>
+      <div class="item">
+        <img src="img/icon9.png">
+        <div class="text">
+          <h3>Awesome</h3>
+          <p>igmmg ofont fomnt gofn gogn g on me You like a shot of pure gold I think I'm 'bout to explode memo enim ipfjkd iten idngion img dimn outn ofjen innfj imt ioont</p>        </div>
+      </div>
+    </div>
+    <div class="recent">
+      <div class="testmonials">
+        <div class="div1">
+          <p>Testlmonlals</p>
+        </div>
+        <div class="div2">
+          <p>Recent Feedbacks</p>
+        </div>
+      </div>
+      <div class="text">
+        <p>"</p>
+        <p>Lorem ipsum dolor ait aet, consectetur adipising elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+        <div class="short-line"></div>
+        <p style=font-weight:bold;"">John Mayer</p>
+        <p>Halcyon, CEO</p>
+        <div class="image">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </div>   
+  </div>
+  <div class="bottom-agent">
+    <div>
+      <span>Find An Agent</span>
+      <input type="text" placeholder="        Enter a Suburb"></input>
+      <button>SEARCH</button>
+  </div>
+  </div>
+  <div class="footer">
+    <div>
+      <ul>
+        <li>Blog</li>
+        <li>Contact Us</li>
+        <li>About Us</li>
+        <li>FAQs</li>
+        <li>Privacy</li>
+        <li>Disclamer</li>
+        <li><img src="img/twitter.png"></li>
+        <li><img src="img/facebook.png"></li>
+      </ul>
     </div>
   </div>
+  
 </body>
 </html>
