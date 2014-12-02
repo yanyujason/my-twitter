@@ -66,445 +66,407 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 4, ../sass/style.scss */
 html {
   min-width: 80%;
-  min-height: auto;
 }
 
 /* line 9, ../sass/style.scss */
 body {
+  padding: 10px 150px;
   font-family: 'PT Sans', sans-serif;
-  font-size: 62.5%;
-  background-color: #006666;
   margin: 0 auto;
+  background-color: #ffcc99;
 }
 
 /* line 17, ../sass/style.scss */
-.container {
-  width: 90%;
-  height: 600px;
-  background-image: url("../img/sunset-resized.jpg");
-  opacity: 0.9;
-  background-size: 100% 600px;
+.top {
   margin: 0 auto;
+  background-color: #fffbf5;
+  height: 65px;
 }
-
-/* line 26, ../sass/style.scss */
-.a {
+/* line 22, ../sass/style.scss */
+.top li {
+  float: left;
+  margin-right: 10px;
+  margin-top: 10px;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  margin-left: 8px;
+}
+/* line 31, ../sass/style.scss */
+.top li span {
+  display: block;
+  margin-top: 13px;
+  font-size: 15px;
+}
+/* line 38, ../sass/style.scss */
+.top .twitter {
+  margin-left: 25%;
+}
+/* line 40, ../sass/style.scss */
+.top .twitter span {
+  font-size: 35px;
+  color: #80a8cc;
+  margin-top: 5px;
+}
+/* line 47, ../sass/style.scss */
+.top .googleplus {
+  float: right;
+}
+/* line 51, ../sass/style.scss */
+.top li:nth-child(1) {
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: #80a8cc;
+  color: #fafaf4;
+}
+/* line 56, ../sass/style.scss */
+.top li:nth-child(1) span {
+  margin-top: 10px;
+  font-size: 22px;
+}
+/* line 62, ../sass/style.scss */
+.top .search_combined {
   position: relative;
-  width: 400px;
+}
+/* line 66, ../sass/style.scss */
+.top .content_search {
+  margin-left: 260px;
+  margin-top: 15px;
+}
+/* line 69, ../sass/style.scss */
+.top .content_search input {
+  height: 30px;
+  width: 170px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  background-color: transparent;
+}
+/* line 76, ../sass/style.scss */
+.top .content_search a span {
+  position: absolute;
+  top: -8px;
+  left: 143px;
+  color: #b8babe;
+  font-size: 22px;
+}
+/* line 85, ../sass/style.scss */
+.top .top_icon {
+  height: 40px;
+  width: 40px;
+  border-radius: 40px;
+  margin-right: 12px;
+  border: 1px solid #e5e1da;
+}
+
+/* line 97, ../sass/style.scss */
+.container div {
+  float: left;
+  display: block;
+  overflow: hidden;
+}
+/* line 103, ../sass/style.scss */
+.container .intro {
+  width: 20%;
+  background: #80a8cc;
+  color: white;
+  height: 1000px;
+}
+/* line 109, ../sass/style.scss */
+.container .intro .avatar {
+  height: 400px;
+  text-align: center;
+  align-content: center;
+  width: 100%;
   margin: 0 auto;
 }
-
-/* line 32, ../sass/style.scss */
-.search-button {
-  position: absolute;
-  top: 23px;
-  right: -71px;
+/* line 116, ../sass/style.scss */
+.container .intro .avatar img {
+  margin: 20px auto 0px;
+  display: block;
+  height: 80px;
+  width: 80px;
+  border-radius: 80px;
 }
-
-/* line 39, ../sass/style.scss */
-.top_bar ul {
+/* line 124, ../sass/style.scss */
+.container .intro .avatar p {
+  width: 200px;
+  margin: 25px auto;
+  line-height: 20px;
+  font-size: 0.8em;
+}
+/* line 131, ../sass/style.scss */
+.container .intro .avatar .page_name {
   font-size: 1.5em;
 }
-/* line 41, ../sass/style.scss */
-.top_bar ul li {
-  margin-top: 30px;
-}
-/* line 45, ../sass/style.scss */
-.top_bar ul li:nth-last-child(3) {
-  margin-left: 160px;
-  float: left;
-}
-/* line 49, ../sass/style.scss */
-.top_bar ul li:nth-last-child(1) {
-  border: 1px solid white;
-  float: right;
-  width: 75px;
-  height: 20px;
-  text-align: center;
-  padding: 10px 0 0 0;
-  margin-top: 20px;
-  margin-right: -200px;
-}
-/* line 59, ../sass/style.scss */
-.top_bar ul li:nth-last-child(2) {
-  margin-right: 200px;
-  float: right;
-}
-
-/* line 66, ../sass/style.scss */
-.agent_top {
-  text-align: center;
-  padding-top: 200px;
-  line-height: 2;
-}
-/* line 70, ../sass/style.scss */
-.agent_top h1 {
-  font-size: 2.5em;
-  color: white;
-}
-/* line 74, ../sass/style.scss */
-.agent_top p {
-  font-size: 1.8em;
-  color: white;
-}
-/* line 78, ../sass/style.scss */
-.agent_top input {
-  margin-top: 20px;
-  width: 400px;
-  height: 40px;
-  font-size: 1.3em;
-  opacity: 0.5;
-  font-color: white;
-  border-bottom-left-radius: 5px;
-  border-top-left-radius: 5px;
-  border: none;
-}
-/* line 90, ../sass/style.scss */
-.agent_top button {
-  width: 100px;
-  height: 42px;
-  border: none;
-  color: #fff;
-  background: #67ddab;
-  cursor: pointer;
-  margin-left: -3px;
-  margin-top: -3px;
-  border-bottom-right-radius: 5px;
-  border-top-right-radius: 5px;
-  border: none;
-}
-
-/* line 105, ../sass/style.scss */
-.content {
-  border: 1px solid #CCC;
-  width: 90%;
-  height: 1800px;
-  background-color: white;
-  margin: 0 auto;
-}
-/* line 112, ../sass/style.scss */
-.content .data {
-  overflow: hidden;
-  width: 1008px;
-  margin: 0 auto;
-  border: 1px solid #aaa;
-  border-radius: 6px;
-  top: -75px;
-  position: relative;
-  background: whitesmoke;
-  height: 150px;
-}
-/* line 123, ../sass/style.scss */
-.content .data li {
-  width: 250px;
-  float: left;
-  text-align: center;
-  border-right: 2px solid #CCCCCC;
-  height: 150px;
-}
-/* line 129, ../sass/style.scss */
-.content .data li .number {
-  font-size: 20px;
-  margin-top: 50px;
-  font-weight: bold;
-}
 /* line 135, ../sass/style.scss */
-.content .data li .item {
-  font-size: 10px;
-  margin-top: 20px;
-  color: #CCCCCC;
+.container .intro .avatar .follow {
+  height: 24px;
+  width: 120px;
+  border-radius: 10px;
+  background-color: #739bbf;
+  align-content: space-between;
+  font-size: 1em;
 }
-/* line 143, ../sass/style.scss */
-.content .how {
-  width: 85%;
-  height: 500px;
-  margin: 0 auto;
+/* line 144, ../sass/style.scss */
+.container .intro .intro_image {
+  height: 200px;
 }
 /* line 147, ../sass/style.scss */
-.content .how .how_header {
-  border-bottom: 1px solid #aaa;
-  padding-bottom: 105px;
-  text-align: center;
-  margin: 0 auto;
-  width: 700px;
+.container .intro .intro_image img {
+  height: 60px;
+  width: 33.43%;
+  margin: 0px -5px -3px 0;
 }
 /* line 153, ../sass/style.scss */
-.content .how .how_header .how_underline {
-  border-top: 3px solid #CCC;
-  width: 50px;
-  margin: 0 auto;
-  margin-top: 10px;
+.container .intro .activities {
+  margin-left: 25px;
 }
-/* line 159, ../sass/style.scss */
-.content .how .how_header h2 {
-  font-weight: bolder;
-  font-size: 20px;
+/* line 156, ../sass/style.scss */
+.container .intro .activities span {
+  color: #739bbf;
+  font-size: 15px;
 }
-/* line 164, ../sass/style.scss */
-.content .how .how_content {
+/* line 161, ../sass/style.scss */
+.container .intro .activities a {
+  display: inline-block;
+  color: white;
+  font-size: 13px;
+  text-decoration: underline;
+}
+/* line 168, ../sass/style.scss */
+.container .intro .activities p {
+  margin: 8px 10px;
+}
+/* line 172, ../sass/style.scss */
+.container .intro .activities .activities_title {
+  height: 30px;
+}
+/* line 176, ../sass/style.scss */
+.container .intro .activities .icon:before {
+  top: 2px;
+  margin: auto;
   position: relative;
-  top: -20px;
-  overflow: hidden;
-  padding-bottom: 120px;
-  border-bottom: 1px solid #ccc;
+  right: 3px;
 }
-/* line 170, ../sass/style.scss */
-.content .how .how_content .item {
-  float: left;
-  width: 28%;
-  margin: 0 2.6%;
+/* line 185, ../sass/style.scss */
+.container .content {
+  width: 60%;
+  background-color: #f2eee8;
+  height: 1000px;
+  border-top: 1px solid #f2eee8;
 }
-/* line 174, ../sass/style.scss */
-.content .how .how_content .item .icon {
-  border: 1px solid #ccc;
-  border-radius: 100%;
-  width: 35px;
-  height: 35px;
-  background: #f4f3f1;
-  margin: 0 auto;
-}
-/* line 181, ../sass/style.scss */
-.content .how .how_content .item .icon i {
-  display: block;
-  margin: 7px 10px;
-}
-/* line 187, ../sass/style.scss */
-.content .how .how_content .item img {
-  display: block;
-  margin: 20px auto 40px;
-  height: 35px;
-  width: 35px;
-}
-/* line 193, ../sass/style.scss */
-.content .how .how_content .item h2 {
-  font-size: 18px;
-  margin-bottom: 24px;
-  text-align: center;
-  font-weight: bolder;
-}
-/* line 199, ../sass/style.scss */
-.content .how .how_content .item p {
-  font-size: 16px;
-  text-align: center;
-  line-height: 1.5;
-}
-/* line 207, ../sass/style.scss */
-.content .why {
-  width: 85%;
-  height: 500px;
-  margin: 0 auto;
-  margin-top: 100px;
-  border-bottom: 1px solid #CCC;
-  padding-bottom: 100px;
-}
-/* line 214, ../sass/style.scss */
-.content .why .title {
-  text-align: center;
-  font-size: 20px;
-  font-weight: bold;
-  margin: 70px;
-}
-/* line 220, ../sass/style.scss */
-.content .why .item {
-  width: 49.8%;
-  height: 150px;
-  float: left;
-}
-/* line 224, ../sass/style.scss */
-.content .why .item img {
-  margin-top: 20px;
-  position: absolute;
-  margin-left: 20px;
-}
-/* line 229, ../sass/style.scss */
-.content .why .item .text {
-  margin-left: 70px;
-  font-size: 16px;
-}
-/* line 232, ../sass/style.scss */
-.content .why .item .text h3 {
-  margin-top: 18px;
-  padding-bottom: 20px;
-  font-size: 20px;
-  font-weight: bold;
-}
-/* line 238, ../sass/style.scss */
-.content .why .item .text p {
-  padding-right: 100px;
-}
-/* line 244, ../sass/style.scss */
-.content .recent {
-  width: 85%;
-  height: 300px;
+/* line 191, ../sass/style.scss */
+.container .content .relation {
+  height: 70px;
+  width: 90%;
   margin: 0 auto;
   background-color: white;
+  overflow: hidden;
+  position: relative;
+  top: 30px;
+  left: 35px;
+  text-align: center;
+  background-color: #fffbf5;
 }
-/* line 249, ../sass/style.scss */
-.content .recent .testmonials {
+/* line 203, ../sass/style.scss */
+.container .content .relation li {
+  float: left;
   width: 25%;
-  border: 1px solid #CCC;
-  height: 35px;
-  margin: 0 auto;
-  margin-top: 90px;
+  margin-top: -5px;
 }
-/* line 255, ../sass/style.scss */
-.content .recent .testmonials .div1 {
-  background-color: #003333;
-  width: 50%;
-  text-align: center;
-  height: 35px;
-  font-size: 15px;
+/* line 208, ../sass/style.scss */
+.container .content .relation li li:nth-child(1) {
+  border-bottom: 2px solid blue;
+}
+/* line 212, ../sass/style.scss */
+.container .content .relation li .name {
+  font-size: 0.8em;
+  margin-top: 25px;
+  color: #ddd8cc;
+}
+/* line 218, ../sass/style.scss */
+.container .content .relation li .value {
+  font-size: 1em;
+  margin-top: -10px;
+  color: #5e5c56;
+  font-weight: bold;
+}
+/* line 228, ../sass/style.scss */
+.container .content .main_content {
+  background-color: #fffbf5;
+  width: 90%;
+  margin: 0 auto;
+  height: 900px;
+  top: 60px;
+  left: 35px;
+  position: relative;
+}
+/* line 237, ../sass/style.scss */
+.container .content .main_content li {
+  width: 90%;
+  margin: 40px 30px -90px 0;
+  float: right;
+  position: relative;
+}
+/* line 243, ../sass/style.scss */
+.container .content .main_content li .tweet_avatar {
+  height: 40px;
+  width: 40px;
+  border-radius: 40px;
+  margin-right: 18px;
+  margin-left: 0px;
+}
+/* line 250, ../sass/style.scss */
+.container .content .main_content li .tweet_author {
+  color: #3d3e48;
+}
+/* line 253, ../sass/style.scss */
+.container .content .main_content li .user_name {
+  color: #ded9ce;
+}
+/* line 256, ../sass/style.scss */
+.container .content .main_content li .publish_time {
+  float: right;
+  color: #d6d3d0;
+}
+/* line 260, ../sass/style.scss */
+.container .content .main_content li p {
+  width: 90%;
+  margin-left: 58px;
+  line-height: 20px;
+  color: #a09d97;
+}
+/* line 266, ../sass/style.scss */
+.container .content .main_content li .tweet_action {
+  overflow: hidden;
+  position: relative;
+  width: 90%;
+  height: auto;
+  left: 60px;
+  top: -50px;
+  color: #c7c2b1;
+}
+/* line 275, ../sass/style.scss */
+.container .content .main_content li .tweet_action li {
   float: left;
-  color: white;
+  width: 20%;
+  margin-right: -70px;
+  font-size: 17px;
+  padding-bottom: 10px;
+  margin-bottom: 40px;
 }
-/* line 263, ../sass/style.scss */
-.content .recent .testmonials .div1 p {
-  padding-top: 10px;
+/* line 284, ../sass/style.scss */
+.container .content .main_content li .tweet_action .ellipsis {
+  margin-left: 23px;
 }
-/* line 267, ../sass/style.scss */
-.content .recent .testmonials .div2 {
-  width: 50%;
-  text-align: center;
-  height: 35px;
-  float: left;
+/* line 288, ../sass/style.scss */
+.container .content .main_content li .tweet_action .maximize {
+  float: right;
   font-size: 15px;
+  margin-right: -40px;
 }
-/* line 273, ../sass/style.scss */
-.content .recent .testmonials .div2 p {
-  padding-top: 10px;
-}
-/* line 278, ../sass/style.scss */
-.content .recent .text {
-  width: 40%;
-  height: 100px;
-  text-align: center;
-  margin: 0 auto;
-  margin-top: 20px;
-  font-size: 14px;
-  line-height: 1.5;
-}
-/* line 286, ../sass/style.scss */
-.content .recent .text .short-line {
-  width: 5%;
-  margin: 0 auto;
-  border-bottom: 1px solid #CCC;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-/* line 293, ../sass/style.scss */
-.content .recent .text .image {
-  width: 400px;
-  height: 60px;
-  margin: 0 auto;
+/* line 294, ../sass/style.scss */
+.container .content .main_content li .tweet_image {
+  height: 230px;
+  width: 90%;
+  display: block;
   margin-top: 20px;
   margin-left: 60px;
+  margin-bottom: 20px;
 }
-/* line 299, ../sass/style.scss */
-.content .recent .text .image div {
-  width: 60px;
-  height: 60px;
-  border-radius: 60px;
-  background-image: url("../img/sunset-resized.jpg");
-  float: left;
-  margin-left: 30px;
+/* line 306, ../sass/style.scss */
+.container .relationship {
+  width: 20%;
+  background-color: #fffbf5;
+  margin: 0 auto;
+  height: 1000px;
+  border-top: 1px solid #e8e4de;
 }
-
 /* line 313, ../sass/style.scss */
-.bottom-agent {
-  width: 90%;
-  height: 200px;
-  background-image: url("../img/sunset-resized.jpg");
+.container .relationship .trends {
+  margin: 15px auto 0 25px;
+  color: #85837e;
+}
+/* line 317, ../sass/style.scss */
+.container .relationship .trends li {
+  margin-bottom: 10px;
+}
+/* line 320, ../sass/style.scss */
+.container .relationship .trends li span a {
+  color: #9ebbd4;
+  font-size: 0.8em;
+}
+/* line 326, ../sass/style.scss */
+.container .relationship .trends .following {
+  margin: 15px auto 0 25px;
+}
+/* line 329, ../sass/style.scss */
+.container .relationship .trends .following .follow_tittle {
   margin: 0 auto;
 }
-/* line 318, ../sass/style.scss */
-.bottom-agent span {
-  font-size: 18px;
-  color: white;
-  margin-right: 20px;
-  margin-left: 20px;
-}
-/* line 324, ../sass/style.scss */
-.bottom-agent div {
-  width: 60%;
-  margin: 0 auto;
-  padding-top: 60px;
-}
-/* line 328, ../sass/style.scss */
-.bottom-agent div input {
-  margin-top: 20px;
-  width: 400px;
-  height: 40px;
-  font-size: 1.3em;
-  opacity: 0.5;
-  font-color: white;
-  border-bottom-left-radius: 5px;
-  border-top-left-radius: 5px;
-  border: none;
+/* line 335, ../sass/style.scss */
+.container .relationship .following {
+  position: relative;
+  top: 20px;
+  left: 15px;
 }
 /* line 340, ../sass/style.scss */
-.bottom-agent div button {
-  width: 100px;
-  height: 43px;
-  border: none;
-  color: #fff;
-  background: #67ddab;
-  cursor: pointer;
-  margin-left: -2px;
-  margin-top: -2px;
-  border-bottom-right-radius: 5px;
-  border-top-right-radius: 5px;
+.container .relationship .following .follow_tittle {
+  width: 100%;
+  margin-bottom: 20px;
 }
-
-/* line 355, ../sass/style.scss */
-.footer {
-  height: 50px;
-  background-color: white;
-  width: 90%;
-  margin: 0 auto;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
+/* line 344, ../sass/style.scss */
+.container .relationship .following .follow_tittle .following_more {
+  color: #9ebbd4;
 }
-/* line 362, ../sass/style.scss */
-.footer ul {
+/* line 348, ../sass/style.scss */
+.container .relationship .following .follow_tittle a {
   text-decoration: none;
-  padding-top: 20px;
-  padding-left: 100px;
+  color: #98948d;
 }
-/* line 366, ../sass/style.scss */
-.footer ul li {
-  float: left;
-  font-size: 15px;
-  margin-left: 30px;
-}
-/* line 371, ../sass/style.scss */
-.footer ul li:nth-last-child(2) {
-  margin-left: 500px;
-}
-
-/* line 377, ../sass/style.scss */
-.agent_number {
-  width: 90%;
-  border: 1px solid red;
-  overflow: hidden;
-  margin: 0 auto;
-  border-radius: 6px;
-  top: -75px;
+/* line 353, ../sass/style.scss */
+.container .relationship .following .follow_tittle .following_more {
+  float: right;
   position: relative;
-  background: #f4f3f1;
-  /*.item{
-    width: 25%;
-    border-right: 1px solid #CCC;
-    float: left;
-    .number {
-      padding: 50px 0 20px;
-      font-weight: bolder;
-      color: #555;
-    }
-    p{
-      color: #999;
-      text-align: center;
-      padding-bottom: 50px;
-    }
-  }
-*/
+  right: 40px;
+}
+/* line 361, ../sass/style.scss */
+.container .relationship .follow_members {
+  width: 100%;
+}
+/* line 365, ../sass/style.scss */
+.container .relationship .follow_members ul li .other_friend {
+  position: relative;
+  left: 20px;
+}
+/* line 368, ../sass/style.scss */
+.container .relationship .follow_members ul li .other_friend span {
+  display: block;
+  margin-bottom: 5px;
+}
+/* line 372, ../sass/style.scss */
+.container .relationship .follow_members ul li .other_friend .fol span {
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 376, ../sass/style.scss */
+.container .relationship .follow_members ul li .other_friend .other_name {
+  color: #76756e;
+  font-size: 1em;
+  margin-right: 50px;
+}
+/* line 381, ../sass/style.scss */
+.container .relationship .follow_members ul li .other_friend .other_position {
+  color: #cdc8ba;
+  font-size: 13px;
+}
+/* line 385, ../sass/style.scss */
+.container .relationship .follow_members ul li .other_friend a {
+  text-decoration: none;
+}
+/* line 391, ../sass/style.scss */
+.container .relationship .follow_members ul img {
+  height: 30px;
+  width: 30px;
+  border-radius: 30px;
 }
